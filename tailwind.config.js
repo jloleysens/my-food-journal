@@ -9,8 +9,11 @@ module.exports = {
     },
     colors: {
       lightBg: '#FFFCE6',
-      lightBgDarker: '#FFFAD6',
-      lightBgDarkerer: '#FFF5AD',
+      lightBgDarker1: '#FFFAD6',
+      lightBgDarker2: '#FFF5AD',
+      lightBgDarker3: '#FFE20A',
+      teal: '#6FA9AE',
+      darkestShade: '#3A0305',
       black: '#210203',
     },
     fontFamily: {

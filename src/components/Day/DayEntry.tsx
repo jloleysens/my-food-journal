@@ -8,11 +8,10 @@ interface Props {
 }
 
 export const DayEntry: FunctionComponent<Props> = ({ date, description }) => (
-  <div className="flex text-xl">
-    <div>
+  <div className="flex items-center justify-start px-8 text-xl">
+    <div className="mr-4">
       <span role="img">🥓</span>
     </div>
-    <SpacerHS />
     <div>
       <p className="leading-8 font-semibold">{description}</p>
     </div>

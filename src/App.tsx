@@ -26,11 +26,12 @@ const entries = [
 ];
 
 const days = [{ entries }, { entries }, { entries }];
+// const days = [];
 
 function App() {
   return (
     <>
-      <div className="w-88 sm:w-96 mx-auto my-0 overflow-auto pt-12 pb-24 bg-lightBg text-black leading-6">
+      <div className="w-88 sm:w-96 md:w-144 mx-auto my-0 overflow-auto pt-10 pb-24 bg-lightBg text-black leading-6">
         {days.map(({ entries }, index) => (
           <React.Fragment key={index}>
             <Day key={index} entries={entries} />
