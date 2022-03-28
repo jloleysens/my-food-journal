@@ -16,13 +16,12 @@ export const Day: FunctionComponent<Props> = ({ entries }) => (
     </div>
     <div className="flex flex-col ml-1">
       <SpacerVS />
-      {entries.map(({ date, description }, index) => (
+      {entries.map(({ createdAt, description }, index) => (
         <React.Fragment key={index}>
-          <DayEntry date={date} description={description} />
+          <DayEntry createdAt={createdAt} description={description} />
           {index !== entries.length - 1 && (
             <>
               <SpacerVXS />
-              <div className="bg-lightBgDarker3 w-16 rounded h-px self-center" />
               <SpacerVXS />
             </>
           )}
