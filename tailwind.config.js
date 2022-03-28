@@ -12,6 +12,7 @@ module.exports = {
       lightBgDarker1: '#FFFAD6',
       lightBgDarker2: '#FFF5AD',
       lightBgDarker3: '#FFE20A',
+      subduedText: '#7F7D76',
       teal: '#6FA9AE',
       darkestShade: '#3A0305',
       black: '#210203',

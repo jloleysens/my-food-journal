@@ -1,5 +1,6 @@
 .addEntry span[contenteditable]:empty::before {
   content: attr(data-placeholder);
   font-style: italic;
-  color: theme(colors.darkestShade);
+  color: theme(colors.subduedText);
+  font-weight: theme(fontWeight.semibold);
 }

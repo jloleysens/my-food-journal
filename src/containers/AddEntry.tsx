@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState, useEffect } from 'react';
 import { IoAdd, IoCheckmark, IoClose } from 'react-icons/io5';
 
 import { useIsAddingEntry, useAddEntry } from '../state';
+import { SpacerVXS } from '../components';
 
 import styles from './AddEntry.module.css';
 
@@ -24,11 +25,11 @@ export const AddEntry: FunctionComponent<Props> = ({}) => {
         isAddingEntry ? 'h-full pt-3' : 'h-20'
       } pb-3 w-[inherit]`}
     >
-      <div className="bg-lightBgDarker2 w-full h-full rounded-lg p-3">
+      <div className="bg-lightBgDarker2 w-full h-full rounded-lg p-4">
         {isAddingEntry ? (
-          <div className="h-full relative pt-10 text-lg">
+          <div className="flex flex-col h-full text-lg">
             <span
-              className="block h-full"
+              className="block bg-lightBgDarker1 p-3 h-full outline-dashed outline-2 outline-teal"
               data-placeholder="What did you have today?"
               contentEditable
               ref={(el) => {
@@ -36,7 +37,8 @@ export const AddEntry: FunctionComponent<Props> = ({}) => {
               }}
               onInput={(ev) => setEntryDescription(ev.currentTarget.innerText)}
             />
-            <div className="absolute top-1 right-1">
+            <SpacerVXS />
+            <div className="flex justify-between">
               {/* This and the buttons below should be a reusable component */}
               <button
                 className="h-10 aspect-[1]"
@@ -48,8 +50,6 @@ export const AddEntry: FunctionComponent<Props> = ({}) => {
                   <IoClose size={30} />
                 </div>
               </button>
-            </div>
-            <div className="absolute bottom-1 right-1">
               <button
                 className="h-10 aspect-[1]"
                 onClick={() => {
