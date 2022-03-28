@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const Day: FunctionComponent<Props> = ({ entries }) => (
-  <div className="bg-lightBgDarker1 pt-8 rounded-xl">
+  <div className="bg-lightBgDarker1 pt-8 rounded-xl w-full">
     <div className="px-8">
       <DayTitle date={new Date()} />
     </div>

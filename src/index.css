@@ -8,7 +8,7 @@
 
 @layer components {
   .phone-content-width {
-    @apply w-88;
+    @apply w-10/12;
   }
 }
 

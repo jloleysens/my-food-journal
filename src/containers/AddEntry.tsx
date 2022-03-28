@@ -6,9 +6,7 @@ import { SpacerVXS } from '../components';
 
 import styles from './AddEntry.module.css';
 
-interface Props {}
-
-export const AddEntry: FunctionComponent<Props> = ({}) => {
+export const AddEntry: FunctionComponent = () => {
   const [isAddingEntry, setIsAddingEntry] = useIsAddingEntry();
   const addEntry = useAddEntry();
   const [entryDescription, setEntryDescription] = useState<
