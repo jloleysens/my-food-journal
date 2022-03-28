@@ -9,7 +9,7 @@ export const DayEntry: FunctionComponent<Props> = ({
   createdAt,
   description,
 }) => (
-  <div className="flex items-center justify-start px-8 text-xl">
+  <div className="flex items-center justify-start px-8 text-lg sm:text-xl">
     <div className="mr-4">
       <span role="img">🥓</span>
     </div>
