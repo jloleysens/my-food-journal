@@ -37,6 +37,7 @@ export const AddEntry: FunctionComponent<Props> = ({}) => {
               onInput={(ev) => setEntryDescription(ev.currentTarget.innerText)}
             />
             <div className="absolute top-1 right-1">
+              {/* This and the buttons below should be a reusable component */}
               <button
                 className="h-10 aspect-[1]"
                 onClick={() => {

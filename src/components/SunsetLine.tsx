@@ -1,7 +1,5 @@
 import React, { FunctionComponent } from 'react';
 
-interface Props {}
-
-export const SunsetLine: FunctionComponent<Props> = ({}) => (
+export const SunsetLine: FunctionComponent = () => (
   <div className="font-mono font-bold text-center">***</div>
 );
