@@ -4,8 +4,10 @@ export const getMonthDate = (date: Date): string => {
   return String(date.getDate());
 };
 
-export const getMonthName = (date: Date): string => {
-  return monthNames[date.getMonth()];
+export const getMonthName = (date: number | Date): string => {
+  return typeof date === 'number'
+    ? monthNames[date]
+    : monthNames[date.getMonth()];
 };
 
 export const getYear = (date: Date): string => String(date.getFullYear());

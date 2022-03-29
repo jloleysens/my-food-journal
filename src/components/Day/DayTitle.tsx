@@ -3,11 +3,13 @@ import React, { FunctionComponent } from 'react';
 import { getMonthDate, getMonthName, getYear } from '../../modules/date';
 
 interface Props {
-  date: Date;
+  day: number;
+  month: number;
+  year: number;
 }
 
-export const DayTitle: FunctionComponent<Props> = ({ date }) => (
+export const DayTitle: FunctionComponent<Props> = ({ day, month, year }) => (
   <h1 className="font-bold text-2xl sm:text-4xl whitespace-nowrap">
-    {getMonthDate(date)}&nbsp;{getMonthName(date)}&nbsp;{getYear(date)}
+    {day}&nbsp;{getMonthName(month)}&nbsp;{year}
   </h1>
 );

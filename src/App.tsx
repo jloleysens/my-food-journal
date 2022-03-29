@@ -37,19 +37,23 @@ function App() {
     return <div>Loading...</div>;
   }
 
-  return (
-    <>
-      <div className="phone-content-width sm:w-96 md:w-144 mx-auto my-0 overflow-auto pt-10 pb-24 bg-lightBg text-black leading-6">
-        {days.contents.map(({ entries }, index) => (
-          <React.Fragment key={index}>
-            <Day key={index} entries={entries} />
-            {index !== days.contents.length - 1 && <SpacerVS />}
-          </React.Fragment>
-        ))}
-        <AddEntry />
-      </div>
-    </>
-  );
+    if (days.state === 'hasError') {
+      return <div>Something went wrong...</div>;
+    }
+
+    return (
+      <>
+        <div className="phone-content-width sm:w-96 md:w-144 mx-auto my-0 overflow-auto pt-10 pb-24 bg-lightBg text-black leading-6">
+          {days.contents.map((day, index) => (
+            <React.Fragment key={index}>
+              <Day key={index} {...day} />
+              {index !== days.contents.length - 1 && <SpacerVS />}
+            </React.Fragment>
+          ))}
+          <AddEntry />
+        </div>
+      </>
+    );
 }
 
 export default App;
