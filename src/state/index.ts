@@ -39,6 +39,8 @@ export const useIsAddingEntry = () => {
   return useRecoilState(isAddingEntry);
 };
 
+// Actions
+
 export const useAddEntry = () => {
   return useRecoilCallback(
     ({ snapshot, set }) =>

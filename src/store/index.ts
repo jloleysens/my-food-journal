@@ -7,5 +7,6 @@ export const syncToStore = (data: JournalEntries): void => {
 };
 
 export const syncFromStore = (): JournalEntries => {
-  return JSON.parse(window.localStorage.getItem(storeKey)) || [];
+  const data: null | string = window.localStorage.getItem(storeKey);
+  return data ? JSON.parse(data) : [];
 };
