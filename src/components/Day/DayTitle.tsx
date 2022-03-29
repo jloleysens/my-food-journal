@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import { getMonthDate, getMonthName, getYear } from '../../modules/date';
+import { getMonthName } from '../../modules/date';
 
 interface Props {
   day: number;

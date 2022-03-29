@@ -43,7 +43,7 @@ function App() {
 
     return (
       <>
-        <div className="phone-content-width sm:w-96 md:w-144 mx-auto my-0 overflow-auto pt-10 pb-24 bg-lightBg text-black leading-6">
+        <div className="phone-content-width sm:w-96 md:w-144 mx-auto my-0 overflow-auto pt-10 pb-24 bg-lightBg text-black leading-6 h-full">
           {days.contents.map((day, index) => (
             <React.Fragment key={index}>
               <Day key={index} {...day} />
