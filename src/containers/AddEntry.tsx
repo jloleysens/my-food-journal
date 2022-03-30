@@ -65,7 +65,7 @@ export const AddEntry: FunctionComponent = () => {
             }}
           >
             <div className="flex flex-col h-full text-lg">
-              <div className="outline-dashed outline-2 outline-teal h-full">
+              <div className="outline-dashed outline-2 outline-teal h-full m-1">
                 <span
                   className="block bg-lightBgDarker1 p-3 h-full outline-none"
                   data-placeholder="What did you have today?"
